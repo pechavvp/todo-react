@@ -1,38 +1,117 @@
-.App {
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Roboto', sans-serif;;
+}
+
+.main {
+  display: block;
+  width: 476px;
+  height: 688px;
+  background-color: #fff;
+  margin: 50px auto;
+  border: 1px solid #fff;
+}
+
+.high-block {
+  margin-top: 25px;
+}
+
+.block-title {
+  display: block;
+  font-size: 24px;
   text-align: center;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.block-input {
+  width: 460px;
+  border: 1px solid #989898;
+  border-radius: 6px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-input {
+  font-size: 18px;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: #202020;
+  width: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:focus {
+  font-size: 18px;
+  padding: 12px;
+  outline: none;
+  color: #202020;
+  white-space: normal;
 }
 
-.App-link {
-  color: #61dafb;
+input::-webkit-input-placeholder {color:#bbb;}
+input::-moz-placeholder          {color:#bbb;}
+input:-moz-placeholder           {color:#bbb;}
+input:-ms-input-placeholder      {color:#bbb;}
+
+.add-button {
+  background: transparent url(./img/add-icon.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block-item {
+  display: block;
+  position: relative;
+  width: 460px;
+  border: 1px solid #989898;
+  border-radius: 6px;
+  margin: 8px auto;
+}
+
+.block-item-done {
+  background-color: #f4f4f4;
+}
+
+.block-item-text {
+  font-size: 18px;
+  padding: 12px 45px;
+  border-radius: 6px;
+  color: #202020;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.checkbox-button {
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border: none;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+}
+
+.checkbox-button-off {
+  background: transparent url(./img/checkbox.png) no-repeat;
+}
+
+.checkbox-button-on {
+  background: transparent url(./img/checkbox-on.png) no-repeat;
+}
+
+.delete-button {
+  display: block;
+  position: absolute;
+  background: transparent url(./img/delete-icon.png) no-repeat;
+  width: 17px;
+  height: 17px;
+  border: none;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
 }
